@@ -5,7 +5,7 @@ package singleton;
  *
  */
 public class Hungry {
-	private static Hungry hungry = new Hungry();
+	private static Hungry hungry = new Hungry(); // final?
 	
 	// Ë½ÓÐ»¯
 	private Hungry() {
