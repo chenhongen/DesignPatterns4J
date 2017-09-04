@@ -1,5 +1,9 @@
 package singleton;
-
+/**
+ * ÀÁººÄ£Ê½
+ * @author che
+ *
+ */
 public class Lazy {
 	private static Lazy lazy;
 	

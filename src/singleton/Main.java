@@ -3,7 +3,13 @@ package singleton;
 public class Main {
 	/**
 	 * 单例模式确保此类仅有一个实例，自行实例化并提供一个访问它的全局公有静态方法
-	 * 保证这个获取实例的方法是线程安全的，并防止反序列化、反射、克隆（、多个类加载器、分布式系统）等多种情况下重新生成新的实例对象。
+	 * 考虑以下因素：
+	 * 线程安全
+	 * 防止反序列化
+	 * 反射
+	 * 克隆
+	 * 多个类加载器、分布式系统
+	 * JDK版本
 	 */
 	public static void main(String[] args) {
 		Hungry h1 = Hungry.getHungry();
