@@ -14,17 +14,19 @@ public class MiProxy implements Target {
 		this.t = t;
 	}
 
-	public String beforePuchase() {
-		return "µÇÂ½";
+	public void beforePuchase() {
+		System.out.println("µÇÂ½");
 	}
 	
 	@Override
-	public String puchase() {
-		return beforePuchase() + "-" + t.puchase() + "-" + afterPuchase();
+	public void puchase() {
+		beforePuchase();
+		t.puchase();
+		afterPuchase();
 	}
 	
-	public String afterPuchase() {
-		return "¸¶¿î";
+	public void afterPuchase() {
+		System.out.println("¸¶¿î");
 	}
 	
 }
