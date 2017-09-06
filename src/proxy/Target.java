@@ -6,5 +6,5 @@ package proxy;
  *
  */
 public interface Target {
-	String puchase();
+	void puchase();
 }
